@@ -19,7 +19,7 @@ Options
 Usage
 -----
 
-The basic usage of the charIterator plugin may come in handy when you need to wrap all characters in an element, but doesn't do anythnig else.
+The [basic usage][2] of the charIterator plugin may come in handy when you need to wrap all characters in an element, but doesn't do anythnig else.
 
     <h1>charIterator <em>is</em> cool!</h1>
 
@@ -29,7 +29,7 @@ Which would result in:
 
     <span>c</span><span>h</span><span>a</span><span>r</span><span>I</span><span>t</span><span>e</span><span>r</span><span>a</span><span>t</span><span>o</span><span>r</span> <em><span>i</span><span>s</span></em> <span>c</span><span>o</span><span>o</span><span>l</span><span>!</span>
 
-To add an animated effect [jQuery UI][2] needs to be loaded. The wanted effect can be added through the plugin options:
+To add an animated effect [jQuery UI][3] needs to be loaded. The wanted effect can be added through the plugin options:
 
     <h1>charIterator <em>is</em> cool!</h1>
 
@@ -58,4 +58,5 @@ Note that in order to be able to loop the animation in the above example the `op
       }
     });
 
-[2]:http://jqueryui.com/
+[2]:http://jsfiddle.net/PeeHaa/nAaj8/ Basic usage demo
+[3]:http://jqueryui.com/
