@@ -4,8 +4,6 @@ charIterator
 charIterator is a [jQuery][1] plugin which loops through characters of a string in an HTML element and optionally applies a function to the characters.  
 It also supports textnodes which include childnodes (e.g. `<p>Some text with <em><strong>child</strong>ren</em> in the DOM.</p>`).
 
-[1]:http://jquery.com/
-
 Options
 -------
 
@@ -19,7 +17,7 @@ Options
 Usage
 -----
 
-The [basic usage][2] of the charIterator plugin may come in handy when you need to wrap all characters in an element, but doesn't do anythnig else.
+The [basic usage][2] of the charIterator plugin may come in handy when you need to wrap all characters in an container. By default the plugin wraps all characters in a `<span class="charIteractor-wrap"></span>`.
 
     <h1>charIterator <em>is</em> cool!</h1>
 
@@ -27,9 +25,9 @@ The [basic usage][2] of the charIterator plugin may come in handy when you need 
 
 Which would result in:
 
-    <span>c</span><span>h</span><span>a</span><span>r</span><span>I</span><span>t</span><span>e</span><span>r</span><span>a</span><span>t</span><span>o</span><span>r</span> <em><span>i</span><span>s</span></em> <span>c</span><span>o</span><span>o</span><span>l</span><span>!</span>
+    <span class="charIterator-wrap">c</span><span class="charIterator-wrap>h</span><span class="charIterator-wrap>a</span><span class="charIterator-wrap>r</span>...
 
-To add an animated effect [jQuery UI][3] needs to be loaded. The wanted effect can be added through the plugin options:
+To add an [animated effect][3] [jQuery UI][4] needs to be loaded. The wanted effect can be added through the plugin options:
 
     <h1>charIterator <em>is</em> cool!</h1>
 
@@ -41,7 +39,7 @@ To add an animated effect [jQuery UI][3] needs to be loaded. The wanted effect c
       }
     });
 
-Note that in order to be able to loop the animation in the above example the `opacity` has to be reset first:
+Note that in order to be able to [loop the animation][5] in the above example the `opacity` has to be reset first:
 
     <h1>charIterator <em>is</em> cool!</h1>
 
@@ -58,5 +56,8 @@ Note that in order to be able to loop the animation in the above example the `op
       }
     });
 
-[2]:http://jsfiddle.net/PeeHaa/nAaj8/ Basic usage demo
-[3]:http://jqueryui.com/
+[1]:http://jquery.com/
+[2]:http://jsfiddle.net/PeeHaa/nAaj8/
+[3]:http://jsfiddle.net/PeeHaa/22gDX/
+[4]:http://jqueryui.com/
+[5]:http://jsfiddle.net/PeeHaa/SzPX7/
