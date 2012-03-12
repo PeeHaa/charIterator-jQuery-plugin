@@ -58,6 +58,6 @@ Note that in order to be able to [loop the animation][5] in the above example th
 
 [1]:http://jquery.com/
 [2]:http://jsfiddle.net/PeeHaa/nAaj8/ "Basic usage demo"
-[3]:http://jsfiddle.net/PeeHaa/22gDX/
+[3]:http://jsfiddle.net/PeeHaa/22gDX/ "Usage demo with an animation"
 [4]:http://jqueryui.com/
-[5]:http://jsfiddle.net/PeeHaa/SzPX7/
+[5]:http://jsfiddle.net/PeeHaa/SzPX7/ "Usage demo with animation in a loop"
