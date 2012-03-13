@@ -56,8 +56,28 @@ Note that in order to be able to [loop the animation][5] in the above example th
       }
     });
 
+Demonstration of an [animation with a limited number of loops][6]:
+
+    <h1>charIterator <em>is</em> cool!</h1>
+
+    $('h1').charIterator({
+      loop: 5,
+      animation: function(char) {
+        $(char).animate({
+          opacity: 0.1,
+          fontSize: '32px'
+        }, 2000, function() {
+          $(char).animate({
+            opacity: 1,
+            fontSize: '16px'
+          }, 2000);
+        });
+      }
+    });​
+
 [1]:http://jquery.com/
 [2]:http://jsfiddle.net/PeeHaa/nAaj8/ "Basic usage demo"
 [3]:http://jsfiddle.net/PeeHaa/22gDX/ "Usage demo with an animation"
 [4]:http://jqueryui.com/
 [5]:http://jsfiddle.net/PeeHaa/SzPX7/ "Usage demo with animation in a loop"
+[6]:http://jsfiddle.net/PeeHaa/42X5g/ "Usage demo with animation in a finite loop"
